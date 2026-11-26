@@ -92,6 +92,22 @@
             #endregion
 
 
+            #region Q9 TryGetPrice
+            Console.WriteLine("\nQ9 TryGetPrice");
+
+            double price3 = 50.5;
+            Console.WriteLine($"try: {TryGetPrice("omar", out price3)} , price: {price3} "); // false - 0
+            Console.WriteLine($"try: {TryGetPrice("Clean Code", out price3)} , price: {price3} "); // true - 25.5
+
+
+
+
+
+            #endregion
+
+
+
+
 
 
 
@@ -163,6 +179,29 @@
             prices = new double[] { 10.0, 12.5, 15.0 };
 
         }
+
+
+        #endregion
+
+
+
+        #region Q9 TryGetPrice
+
+        static bool TryGetPrice(string title, out double price)
+        {
+            if (title == "Clean Code")
+            {
+                price = 25.5;
+                return true;
+            }
+            else
+            {
+                price = 0;
+                return false;
+            }
+
+        }
+
 
 
         #endregion
