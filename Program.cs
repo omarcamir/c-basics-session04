@@ -127,6 +127,14 @@
             #endregion
 
 
+            #region Q12 print array line by line
+            Console.WriteLine("\nQ12 print array line by line");
+
+            string[] MyBooks = { "Title1", "Title2", "Title3" };
+            PrintAllTitles(MyBooks);
+
+
+            #endregion
 
 
 
@@ -234,6 +242,19 @@
 
 
 
+        #region Q12 print array line by line
+        static void PrintAllTitles(params string[] titles)
+        {
+
+            for (int i = 0; i < titles.Length; i++)
+            {
+                Console.WriteLine($"\n {titles[i]}");
+            }
+        }
+
+
+
+        #endregion
 
 
     }
