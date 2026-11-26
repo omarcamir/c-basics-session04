@@ -58,6 +58,24 @@
             #endregion
 
 
+            #region Q6 Arrays as Parameters
+            Console.WriteLine("\nQ6 Arrays as Parameters");
+            double[] prices1 = { 25.5, 40.0 };
+
+            Console.WriteLine($"prices[0] before method: {prices1[0]}"); //25.5
+            Console.WriteLine($"===========");
+            Console.WriteLine($"prices[0] after method: {prices1[0]}");  //20.5
+
+
+            #endregion
+
+
+
+
+
+
+
+
 
 
 
@@ -94,6 +112,17 @@
 
 
         #endregion
+
+
+        #region Q6 Arrays as Parameters
+        static double ApplyDiscount(double[] prices)
+        {
+            return prices[0] = prices[0] - 5;
+
+
+        }
+        #endregion
+
 
     }
 }
