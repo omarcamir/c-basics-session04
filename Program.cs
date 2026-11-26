@@ -71,6 +71,15 @@
 
 
 
+            #region Q7 By ref
+            Console.WriteLine("\nQ7 By ref");
+
+            Console.WriteLine($"Pass by ref: {AddBonusPagesByRef(ref pages)}"); // 450
+            Console.WriteLine($"pages : {pages}"); //450
+
+
+            #endregion
+
 
 
 
@@ -121,6 +130,18 @@
 
 
         }
+        #endregion
+
+
+        #region Q7 Method by ref
+
+        static int AddBonusPagesByRef(ref int pages)
+        {
+            pages = pages + 50;
+            return pages;
+        }
+
+
         #endregion
 
 
