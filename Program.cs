@@ -23,7 +23,7 @@
             };
 
 
-            Console.WriteLine($"number of copies on shelf 1, slot 0 is: {shelfCopies[1,0]}");
+            Console.WriteLine($"number of copies on shelf 1, slot 0 is: {shelfCopies[1, 0]}");
 
             #endregion
 
@@ -35,14 +35,38 @@
             #endregion
 
 
+            #region Q4 Void Method With Parameter
+
+            Console.WriteLine("\n#region Q4 Void Method With Parameter");
+
+            PrintBookTitle("Clean Code");
+
+
+            #endregion
+
 
             Console.ReadKey();
         }
 
-
+        #region Q3 void method
         static void PrintWelcomeMessage()
         {
             Console.WriteLine("Welcome to the Library!");
         }
+        #endregion
+
+
+
+
+        #region #region Q4 Void Method With Parameter
+
+        static void PrintBookTitle(string title)
+        {
+
+            Console.WriteLine("Book title: " + title);
+        }
+
+        #endregion
+
     }
 }
