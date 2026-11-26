@@ -81,6 +81,17 @@
             #endregion
 
 
+            #region Q8 ReplaceArray
+            Console.WriteLine("\nQ8 ReplaceArray");
+            //prices1 = { 25.5, 40.0 } 
+            ReplaceArray(ref prices1); // { 10.0, 12.5, 15.0 }
+            Console.WriteLine($"ReplaceArray : {prices1.Length}");
+
+
+
+            #endregion
+
+
 
 
 
@@ -139,6 +150,18 @@
         {
             pages = pages + 50;
             return pages;
+        }
+
+
+        #endregion
+
+
+        #region Q8 ReplaceArray
+
+        static void ReplaceArray(ref double[] prices)
+        {
+            prices = new double[] { 10.0, 12.5, 15.0 };
+
         }
 
 
