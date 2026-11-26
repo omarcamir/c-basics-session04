@@ -37,12 +37,28 @@
 
             #region Q4 Void Method With Parameter
 
-            Console.WriteLine("\n#region Q4 Void Method With Parameter");
+            Console.WriteLine("\nQ4 Void Method With Parameter");
 
             PrintBookTitle("Clean Code");
 
 
             #endregion
+
+
+            #region Q5 Method returns value
+
+            Console.WriteLine("\nQ5 Method returns value");
+
+            int pages = 400;
+            Console.WriteLine($"Pass by value: {AddBonusPages(pages)}"); // 450
+            Console.WriteLine($"pages : {pages}"); //400
+
+
+
+            #endregion
+
+
+
 
 
             Console.ReadKey();
@@ -65,6 +81,17 @@
 
             Console.WriteLine("Book title: " + title);
         }
+
+        #endregion
+
+
+        #region Q5 Method returns value
+
+        static int AddBonusPages(int pages)
+        {
+            return pages + 50;
+        }
+
 
         #endregion
 
