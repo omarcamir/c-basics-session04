@@ -27,8 +27,22 @@
 
             #endregion
 
+            #region Q3 void method
+            Console.WriteLine("\nQ3 void method");
+
+            PrintWelcomeMessage();
+
+            #endregion
+
+
 
             Console.ReadKey();
+        }
+
+
+        static void PrintWelcomeMessage()
+        {
+            Console.WriteLine("Welcome to the Library!");
         }
     }
 }
