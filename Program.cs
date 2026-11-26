@@ -107,6 +107,15 @@
 
 
 
+            #region Q10 PrintBookInfo - optional parameter
+            Console.WriteLine("\nQ10 PrintBookInfo - optional parameter");
+
+            PrintBookInfo("HTML Book");
+
+            PrintBookInfo("CSS Book", 245);
+
+
+            #endregion
 
 
 
@@ -205,6 +214,19 @@
 
 
         #endregion
+
+
+        #region Q10 PrintBookInfo - optional parameter
+
+        static void PrintBookInfo(string title, int pages = 300)
+        {
+            Console.WriteLine($"title is: {title} {(pages != null ? $"pages are: {pages}" : "")}");
+        }
+
+        #endregion
+
+
+
 
 
     }
